@@ -1,0 +1,73 @@
+body {
+  background-color: #eee;
+  margin-bottom: 70px;
+}
+
+a, a:hover{
+  text-decoration: none !important;
+  color: inherit;
+}
+
+button {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.header {
+  border-bottom-width: 1px solid rgb(229, 229, 299);
+  padding: 0;
+}
+.header .navbar-nav {
+  flex: 1;
+}
+.header .nav-link{
+  font-weight: 600;
+  color: #555 !important;
+  padding: 28px 1.5rem !important;
+}
+.header .nav-link i.lg{
+  font-size: 22px;
+}
+.header .dropdown-toggle::after {
+  align-self: center !important;
+}
+.header .dropdown:hover > .dropdown-menu{
+  display: block;
+}
+.header .dropdown > .dropdown-toggle:active{
+  pointer-events: none;
+}
+.header .dropdown-menu {
+  box-shadow:rgba(0,0,0,0.08) 0px 4px 16px 0px rgba(0,0,0,0.06) 0px 2px 4px 0px;
+  border: 1px solid #eee;
+  top: 80%;
+}
+.header .dropdown-item {
+  padding: 10px 3rem 10px 15px;
+  font-weight: 600;
+}
+
+.font-18{
+  font-size: 18px;
+}
+
+.label-custom{
+  color: #50575a;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .menu-mobile li *, .menu-mobile .MuiTypography-body1{
+    font-weight: 500 !important;
+  }
+  .p-xs-0{
+    padding: 0 !important;
+  }
+  .hidden-xs{
+    display: none !important;
+  }
+  .header-margin{
+    width: 100%;
+    margin-top: 64px;
+  }
+}
